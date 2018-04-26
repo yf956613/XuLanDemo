@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/abnormal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/exceptional_mode"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/abnormal_tv_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:focusable="false"
+            android:gravity="center|left"
+            android:hint="@string/select_exceptional"
+            android:onClick="chooseNode"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/barcode"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/abnormal_tv_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#00000000"
+            android:digits="@string/stack_digit"
+            android:gravity="center|left"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:id="@+id/bill_code_img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="10dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan_camear" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/package_no"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/abnormal_tv_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:digits="@string/stack_digit"
+            android:gravity="center|left"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/exceptional_remarks"
+            android:textColor="#000"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/abnormal_tv_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:gravity="center|left"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/scan_count"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/abnormal_tv_6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:enabled="false"
+                android:gravity="center|left"
+                android:text="0/0"
+                android:textSize="13sp" />
+
+            <Button
+                android:layout_width="63dp"
+                android:layout_height="29dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/add_button_selector"
+                android:onClick="addData"
+                android:text="@string/save"
+                android:visibility="gone"
+                android:textColor="@color/main_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="2dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center" >
+
+            <GridView
+                android:id="@+id/gridview_abnormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="5"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/abnormal_include" />
+
+</LinearLayout>

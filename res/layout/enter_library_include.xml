@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_dark" />
+
+        <include layout="@layout/enter_library_item" />
+
+        <ListView
+            android:id="@+id/enter_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:cacheColorHint="@color/transparent"
+            android:fastScrollEnabled="true"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+</HorizontalScrollView>

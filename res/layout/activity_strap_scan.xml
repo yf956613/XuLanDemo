@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/task_name"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/strap_edt_taskname"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:drawableRight="@drawable/fhe"
+                    android:focusable="false"
+                    android:gravity="center|left"
+                    android:hint="@string/select_task"
+                    android:onClick="chooseTask"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+            
+               <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lashing_vendor"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/strap_edt_commpany"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:drawableRight="@drawable/fhe"
+                    android:focusable="false"
+                    android:gravity="center|left"
+                    android:hint="@string/select_lashing_vendor"
+                    android:onClick="chooseCompany"
+                    android:paddingRight="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/barcode"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/strap_edt_package_billcode"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="#00000000"
+                    android:digits="@string/stack_digit"
+                    android:gravity="center|left" />
+                
+                <RelativeLayout
+                    android:id="@+id/bill_code_img"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/scan_camear" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/package_no"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/strap_edt_package_number"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:gravity="center|left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/lashing_tips"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/strap_edt_remark"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:gravity="center|left" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:text="@string/scan_count"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/strap_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="#00000000"
+                    android:enabled="false"
+                    android:gravity="center"
+                    android:text="0/0"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/add_button_selector"
+                    android:onClick="addData"
+                    android:text="@string/save"
+                    android:visibility="invisible"
+                    android:textColor="@color/main_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/land_include" />
+
+</LinearLayout>

@@ -1,0 +1,307 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_inquery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/mode_step"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_link"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:drawableRight="@drawable/fhe"
+                android:focusable="false"
+                android:gravity="center|left"
+                android:hint="@string/select_mode_step"
+                android:onClick="chooseLink"
+                android:paddingRight="10dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/task_name"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_task_name"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:drawableRight="@drawable/fhe"
+                android:focusable="false"
+                android:gravity="center|left"
+                android:hint="@string/select_task"
+                android:onClick="chooseTask"
+                android:paddingRight="10dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/inquery_tv_barcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/barcode"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_barcode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="#00000000"
+                android:digits="@string/stack_digit"
+                android:gravity="center|left"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/bill_code_img"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="10dp" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/scan_camear" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/inquery_tv_barno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/package_no"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_barno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:digits="@string/stack_digit"
+                android:gravity="center|left"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/exceptional_remarks"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_meno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@null"
+                android:editable="false"
+                android:gravity="center|left"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/solution"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_solution"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@null"
+                android:editable="false"
+                android:gravity="center|left"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/exceptional_count"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_count_exception"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="#00000000"
+                android:enabled="false"
+                android:gravity="left|center"
+                android:text="0"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:text="@string/return_cargo_count"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_count_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="center|left"
+                android:text="0"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/upload_count"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/inquery_edt_count_load"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@null"
+                android:enabled="false"
+                android:gravity="center|left"
+                android:text="0"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/add_button_selector"
+                    android:onClick="queryData"
+                    android:text="@string/search"
+                    android:textColor="@color/main_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_inquery"
+        layout="@layout/inquery_include" />
+
+</RelativeLayout>

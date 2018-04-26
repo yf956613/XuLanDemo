@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background_text"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/scan_count"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/load_count"
+                android:textColor="#000"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/scan_count_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:gravity="center|right"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="/"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/scan_count_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:gravity="center|left"
+                        android:text="0"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/scan_count_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:gravity="center|right"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:text="/"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/scan_count_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="#00000000"
+                        android:enabled="false"
+                        android:gravity="center|left"
+                        android:text="0"
+                        android:textSize="13sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="63dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/add_button_selector"
+                    android:gravity="center"
+                    android:onClick="addData"
+                    android:visibility="gone"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/save"
+                    android:textColor="@color/main_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

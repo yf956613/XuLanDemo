@@ -1,0 +1,228 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#aeffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/task_name"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_1"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left"
+                android:hint="@string/select_task"
+                android:paddingRight="10dp"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="#aeffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/tractor_no"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_2"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="#aeffffff"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/shift"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_3"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/packages_count"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_5"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/pic"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_3_1"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/tel"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_4"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/driver_phone"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/land_arrive_edt_4_1"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:gravity="center|left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:layout_width="188dp"
+                android:layout_height="45dp"
+                android:background="@drawable/selector_btn_button"
+                android:onClick="sureArrive"
+                android:text="@string/ok"
+                android:textColor="@color/main_color"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

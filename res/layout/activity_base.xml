@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/durian_head_layout"
+        layout="@layout/item_top_title" />
+
+    <LinearLayout
+        android:id="@+id/baseAct_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_background"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

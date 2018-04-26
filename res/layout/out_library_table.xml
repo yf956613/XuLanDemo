@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="603dp"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_dark" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <include layout="@layout/out_library_list_item" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/out_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:fastScrollEnabled="true"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+</HorizontalScrollView>

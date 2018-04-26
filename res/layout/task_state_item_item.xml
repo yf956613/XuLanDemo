@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/mode_type"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="@string/mode_step"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grgray" />
+
+                <TextView
+                    android:id="@+id/load_count"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="sortByPackBarcode"
+                    android:text="@string/load_count"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grgray" />
+
+                <TextView
+                    android:id="@+id/scan_count"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="sortByPackNo"
+                    android:text="@string/scan_count"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grgray" />
+                <TextView
+                    android:id="@+id/exception_number"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:onClick="sortByPackNo"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0.2dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/grgray" />
+
+                <TextView
+                    android:id="@+id/create_time"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:text="提交时间"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:background="@color/gray_dark" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

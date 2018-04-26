@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="36dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/action_photo_tv0"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_2"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/action_photo_tv1"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/barcode"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/action_photo_tv2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/package_no"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+        
+        <!-- <TextView
+            android:id="@+id/action_photo_tv7"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/goods_no"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/item7_view"
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/grgray" />
+        
+        <TextView
+            android:id="@+id/action_photo_tv8"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:visibility="gone"
+            android:text="@string/goods_barcode"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/item8_view"
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@color/grgray" /> -->
+
+        <TextView
+            android:id="@+id/action_photo_tv3"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/mode_step"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/action_photo_tv4"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/image_count"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/action_photo_tv5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/action_photo_tv6"
+            android:layout_width="175dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/update_time"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/gray_dark" />
+
+</LinearLayout>

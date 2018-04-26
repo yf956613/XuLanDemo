@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+    <TextView 
+        android:id="@+id/fragment_identify_list_no"
+        android:layout_width="0dp"
+        android:layout_weight="0.6"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="NO"
+        android:singleLine="true"
+        />
+    
+    <TextView 
+        android:id="@+id/fragment_identify_list_type"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Type"
+        android:singleLine="true"
+        />
+    
+    <TextView 
+        android:id="@+id/fragment_identify_list_tagid"
+        android:layout_width="0dp"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="ID"
+        android:singleLine="true"
+        />
+    
+    <TextView 
+        android:id="@+id/fragment_identify_list_data"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Data"
+        android:singleLine="true"
+        />
+    
+    <TextView 
+        android:id="@+id/fragment_identify_list_count"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Count"
+        android:singleLine="true"
+        />
+     <TextView 
+        android:id="@+id/fragment_identify_list_lasttime"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Time"
+        android:singleLine="true"
+        />
+
+</LinearLayout>

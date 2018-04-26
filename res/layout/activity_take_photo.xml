@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical" >
+
+        <SurfaceView
+            android:id="@+id/sv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:onClick="auto_focus" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <!-- 拍照完成后弹出该提示框，保存、重拍 -->
+
+    <LinearLayout
+        android:id="@+id/layout_save"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/lightgrey"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_takephoto"
+            android:onClick="save"
+            android:text=" 保 存 " />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/selector_btn_takephoto"
+            android:onClick="reTakephoto"
+            android:text=" 重 拍 " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@color/lightgrey"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/selector_btn_takephoto"
+            android:gravity="center"
+            android:onClick="takePhoto"
+            android:text=" 拍 照 " />
+    </LinearLayout>
+
+</LinearLayout>

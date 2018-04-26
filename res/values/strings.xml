@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">平行进口车</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_base">BaseActivity</string>
+    <string name="title_activity_lu_you">LuYouActivity</string>
+    <string name="title_activity_main_menu">MainMenuActivity</string>
+
+    <!-- *******  登录界面 ******** -->
+    <string name="deivceID">设备号：</string>
+    <string name="versionID">版本号：</string>
+    <string name="userName">账 号</string>
+    <string name="password">密 码</string>
+    <string name="remuserName">记住账号</string>
+    <string name="rempassword">记住密码</string>
+    <string name="login">登 录</string>
+    <string name="setting">设 置</string>
+
+    <!-- 项目路由 -->
+    <string name="project">项 目</string>
+    <string name="project_name">项目名称</string>
+    <string name="msg_select_luyou">选择路径/服务</string>
+    <string name="task_tt">任务状态跟踪</string>
+    <string name="msg_select_node">选择节点</string>
+
+    <!-- 陆运 -->
+    <string name="submit">提 交</string>
+    <string name="barcode">包装条码</string>
+    <string name="package_no">包装号码 </string>
+    <string name="tractor_no">车牌号码 </string>
+    <string name="shift">车 次</string>
+    <string name="driver_phone">司机手机</string>
+
+    <!-- 铁运 -->
+    <string name="carriage_no">车皮编号</string>
+
+    <!-- 海运 -->
+    <string name="vessel_name">船 名</string>
+    <string name="voyage">航 次</string>
+    <string name="holds">舱 位</string>
+
+    <!-- 空运 -->
+    <string name="flight">航班/航次</string>
+
+    <!-- 集装箱 -->
+    <string name="cntr_no">集装箱号</string>
+    <string name="company">公司</string>
+
+    <!-- 装卸 -->
+    <string name="vendor">装卸公司</string>
+    <string name="select_vendor">请选择装卸公司</string>
+
+    <!-- 货场 -->
+    <string name="field_no">库位号</string>
+    <string name="keeper">库管员</string>
+    <string name="choose_company">选择公司</string>
+
+    <!-- 绑扎 -->
+    <string name="lashing_vendor">绑扎公司</string>
+    <string name="select_lashing_vendor">请选择绑扎公司</string>
+    <string name="lashing_tips">绑扎要求</string>
+
+    <!-- 检验 -->
+    <string name="survey_vendor">检验公司</string>
+    <string name="select_survey_vendor">请选择检验公司</string>
+    <string name="conclusion">检验结果</string>
+
+    <!-- 打尺 -->
+    <string name="mesurement_vendor">打尺公司</string>
+    <string name="select_mesurement_vendor">请选择打尺公司</string>
+    <string name="monitor">监督员</string>
+    <string name="monitor_2">质检员</string>
+    <string name="checker">打尺员</string>
+    <string name="updated">新数据</string>
+    <string name="initial">原数据</string>
+    <string name="diff">差 异</string>
+    <string name="length_new">新长(mm)</string>
+    <string name="width_new">新宽(mm)</string>
+    <string name="height_new">新高(mm)</string>
+    <string name="length_old">原长(mm)</string>
+    <string name="width_old">原宽(mm)</string>
+    <string name="height_old">原高(mm)</string>
+
+    <!-- 安装 -->
+    <string name="goods_code">商品条码</string>
+    <string name="goods_number">商品号码</string>
+    <string name="goods_name">商品品名</string>
+    <string name="assembled_tips">安装要求</string>
+    <string name="produced_tips">下线要求</string>
+    <string name="package_type">包装方式</string>
+    <string name="package_vendor">包装公司</string>
+    <string name="select_package_vendor">请选择包装公司</string>
+
+    <!-- 抵达 -->
+    <string name="arrival">抵 达</string>
+    <string name="packages_count">装货件数</string>
+
+    <!-- 单件录入 -->
+    <string name="mode_step">操作环节</string>
+    <string name="select_mode_step">请选择操作环节</string>
+    <string name="pack_name">包装品名</string>
+    <string name="lenght">长 (mm)</string>
+    <string name="widht">宽 (mm)</string>
+    <string name="height">高 (mm)</string>
+    <string name="weight">毛重 (kg)</string>
+    <string name="logistics_tips">物流要求</string>
+    <string name="photo">拍 照</string>
+
+    <!-- 异常 -->
+    <string name="exceptional_mode">异常环节</string>
+    <string name="select_exceptional">请选择异常环节</string>
+    <string name="exceptional_remarks">异常描述</string>
+    <string name="exceptional">异常</string>
+
+    <!-- 退运 -->
+    <string name="return_cargo">退运</string>
+    <string name="return_cargo_mode">退运环节</string>
+    <string name="select_return_cargo_mode">请选择退运环节</string>
+    <string name="return_cargo_reason">退运原因</string>
+    <string name="authorized_person">相关负责人填写</string>
+
+    <!-- 查询 -->
+    <string name="solution">解决方案</string>
+    <string name="exceptional_count">异常数</string>
+    <string name="return_cargo_count">退运数</string>
+    <string name="upload_count">载出数</string>
+    <string name="search">查 询</string>
+    <string name="status">货物状态</string>
+    <string name="goods_barcode">商品条码</string>
+    <string name="goods_no">商品号码</string>
+
+    <!-- 公用参数 -->
+    <string name="settings">设 置</string>
+    <string name="update_password">修改密码</string>
+    <string name="clean_data">清理缓存</string>
+    <string name="required">必 填</string>
+    <string name="remarks">备 注</string>
+    <string name="scan_count">扫描数</string>
+    <string name="load_count">载入数</string>
+    <string name="save">保 存</string>
+    <string name="code">二维码</string>
+    <string name="task_name">任务名称</string>
+    <string name="select_task">请选择任务名称</string>
+    <string name="pic">联系人</string>
+    <string name="tel">联系电话</string>
+    <string name="user_name">操作员</string>
+    <string name="update_time">操作时间</string>
+    <string name="no_2">序 号</string>
+    <string name="ok">确 认</string>
+    <string name="cancel">取 消</string>
+    <string name="backToLogin">确认返回登录界面？</string>
+    <string name="backAll">确认退出程序？</string>
+    <string name="task_name_search">请输入任务名称搜索</string>
+    <string name="returns">返 回</string>
+    <string name="off">注销</string>
+    <string name="title">标题</string>
+    <string name="task_following">任务状态跟踪</string>
+    <string name="inland_service">陆  运</string>
+    <string name="loading">装  货</string>
+    <string name="discharge">卸  货</string>
+    <string name="new_1">单件录入</string>
+    <string name="problemcargo">异  常</string>
+    <string name="returncargo">退  运</string>
+    <string name="railwaycargo">铁  运</string>
+    <string name="generalcargo">海  运</string>
+    <string name="aircargo">空  运</string>
+    <string name="containercargo">集装箱</string>
+    <string name="containercargo_1">做  箱</string>
+    <string name="containercargo_2">拆  箱</string>
+    <string name="liftcrane_service">装  卸</string>
+    <string name="transityard_service">货  场</string>
+    <string name="in">入  库</string>
+    <string name="out">出  库</string>
+    <string name="lashing_service">绑  扎</string>
+    <string name="survey_service">检  验</string>
+    <string name="mesurement">打  尺</string>
+    <string name="assembly">安  装</string>
+    <string name="produced">下  线</string>
+    <string name="packing_service">包  装</string>
+    <string name="image_count">图片数量</string>
+    <string name="pack_tips">包装要求</string>
+    <string name="commit_time">提交时间</string>
+    <string name="u_p_not_null">用户名或密码不能为空!</string>
+    <string name="loging">登录中...</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="prompt">提示</string>
+    <string name="project_route">项目路径</string>
+    <string name="select_project">请选择项目</string>
+    <string name="code_not_null">条码不能为空!</string>
+    <string name="img_not_null">图片不能为空!</string>
+    <string name="task_not_null">任务名称不能为空!</string>
+    <string name="task_list">任务列表</string>
+    <string name="packing_operation">包装操作</string>
+    <string name="str_start_scan">开始扫描</string>
+    <string name="str_stop_scan">停止扫描</string>
+    <string name="str_is_stop_scan">"正在停止扫描..."</string>
+    <string name="str_open_identify_pattern">"正在开启扫描模式..."</string>
+    <string name="str_open_recognition_fail">"开启识别模式失败...点击继续..."</string>
+    <string name="str_stop_scanning_operation">"停止扫描操作失败...点击继续..."</string>
+    <string name="select_from_album">从相册中选择</string>
+    <string name="title_activity_strap_scan">StrapScanActivity</string>
+    <string name="title_activity_off_line_scan">OffLineScanActivity</string>
+    <string name="msg_click_delete">点击删除</string>
+    <string name="enterlibrary_table_barcode">条码</string>
+    <string name="enterlibrary_table_admin">管理员</string>
+    <string name="enterlibrary_table_libs">库位</string>
+    <string name="enterlibrary_table_iden">标识</string>
+    <string name="stack_digit">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ-_*/</string>
+    <string name="select_project_route_mode">请选择项目/路径/节点</string>
+    <string name="searching">获取数据中...</string>
+    <string name="scan_records">未录入数据</string>
+    <string name="tractor_LIC_shift_is_required">车牌号码/车次不能为空</string>
+    <string name="vessel_voyage_holds_is_required">船名/航次/舱位不能为空</string>
+    <string name="carriage_no_is_required">车皮编号不能为空</string>
+    <string name="field_no_is_required">库位号不能为空</string>
+    <string name="vendor_is_required">打尺公司不能为空</string>
+    <string name="d_problem_is_required">异常描述不能为空</string>
+    <string name="barcode_is_required">包装条码不能为空</string>
+    <string name="barcode_does_not_exist">条码不存在</string>
+    <string name="lash_vendor_is_required">绑扎公司不能为空</string>
+    <string name="LiftCrane_vendor_is_required">装卸公司不能为空</string>
+    <string name="Survey_vendor_is_required">检验公司不能为空</string>
+    <string name="Pack_vendor_is_required">检验公司不能为空</string>
+    <string name="PDA_User_is_not_Activate">PDA登录权限未开通</string>
+    <string name="Username_is_Expired">登录信息已过期</string>
+    <string name="Company_is_Closed">用户公司已停用</string>
+    <string name="tiemai">贴  唛</string>
+    <string name="title_activity_in_storage">InStorageActivity</string>
+
+</resources>

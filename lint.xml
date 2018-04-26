@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="HandlerLeak" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src/com/xulan/client/takephoto/Bimp.java" />
+    </issue>
+    <issue id="ShowToast">
+        <ignore path="src/com/xulan/client/activity/action/land/LandActivity.java" />
+    </issue>
+</lint>

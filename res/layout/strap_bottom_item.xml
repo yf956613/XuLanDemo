@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="36dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_enter_library"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/land_tv1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_2"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/land_tv2"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/package_no"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/land_tv3"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/barcode"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/land_tv4"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lashing_vendor"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/land_tv5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="绑扎员"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/land_tv6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/task_name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+         <TextView
+            android:id="@+id/land_tv6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/lashing_tips"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+         <TextView
+            android:id="@+id/land_tv6"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+            android:id="@+id/land_tv7"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/update_time"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/gray_dark" />
+
+</LinearLayout>

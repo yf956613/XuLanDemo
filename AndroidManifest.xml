@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xulan.demo"
+    android:versionCode="10"
+    android:versionName="1.3.2" >
+
+    <!-- 2018-03-14 正式库版本号  1.3.1/9 -->
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.fntech.m10.h7" >
+    </instrumentation>
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name="com.xulan.demo.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true" >
+        <activity
+            android:name="com.xulan.demo.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 高德地图 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="93bf17a6c6d3d33cf5b21e5fa7d70c67" >
+        </meta-data>
+        <!-- 定位服务 -->
+        <service android:name="com.amap.api.location.APSService" >
+        </service>
+
+        <activity
+            android:name="com.xulan.demo.activity.BaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.LuYouActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.takephoto.GalleryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.takephoto.PhotoMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.MainMenuActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.OutLibraryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.EnterLibrayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.SingleScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.BackScanActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.TaskListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.land.LandActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.land.LandArriveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.InqueryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.ActionPhotoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.AbnormalActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.load.LoadUnloadActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.load.LoadCompanyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.DoBoxScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.UppackBoxScanMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.shipping.ArrivalBySeaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.StrapActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.ARulerCompanyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.air.AirInstallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.air.ArriveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.trains.TrainsArriveActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.trains.TrainsInstallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.shipping.ShippingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.freightyard.StorageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.ruler.RulerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.ruler.ContrastActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.test.TestActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.install.InstallActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.pack.PackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.pack.PackArrivalActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.client.h7.IdentifyFragment"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.StrapScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.action.OffLineScanActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 热修复测试库 -->
+        <meta-data
+            android:name="com.taobao.android.hotfix.IDSECRET"
+            android:value="24630414-1" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.APPSECRET"
+            android:value="ef75069808a1a3e5d46fd33630b4c8a3" />
+        <meta-data
+            android:name="com.taobao.android.hotfix.RSASECRET"
+            android:value="MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDnLncGCOzgAE8q963vPtYzKUYeiYeznLHyQ+OW0PryDmjFNE2941nWi3KPPmBgv5ggChbkFG7lGItQ8b5iiEWTAqjqBnhDs+xy2D6x9iDHP/DmR8krHZyJ4UcHgQZu7gJ73l4PBj1RsFgXXW3cCacKzB8MzDwcnjKp2bvZBrcYr+l+zPZD4vpOPm2Lrjg1/bC7h/b2VvgF6/efSl7AneZGjRu7fsX4x+jo8HaAY3z4HHSj/KXz1S1xDZ6um055Xb16iRYTNHgqY2o9txXqUS628Y0rR0VjLF6O4Ro1/RXhGjGLj1i3t3lrtnGEP1VdUIOnGpmtC5V7L3V5CVaC7yfXAgMBAAECggEAX+mhK/nL/Otj7RmxKg9R4wv+sXCxwk0CbtbHt6ygUIi14wteLagDf8V/E/r3FWyn+rL06E+p6paSRlTlfg+3fdSeq+lfQAeH0+XvrPnGg6P9mCy0Q5UXewTh6TUYrDFHCokpUOZvzlJxWdBDYgUHLq2dPDwHvH/N2TYif1oP4MdhGCncPr8Y40jjk76pF2g6bVcO4fl1dbzSmaRUKI4/5i4eJowOMT16vOJ5WSoHeIsMsqXz8yUYtuoMHeDiemcwtM62E3QzQc/pym7JjmJk9MusTW9W9S0Dh6y+wAze7vKkH4zzNJdTM6tXGb8Mh7JmGlgzYhO+NTNPiv/cF4AiEQKBgQD44Ifdjmj0dsp05RVodh6j/mYWYWpPM2eqryyYWITHorntqc2Jh+wMaXxonL1iQxqG8TwnLo/aQMYDsmJUMF1zDCaAtzIHaTclvU0JROzDkg1YV+wRXbM5u9HZ4d4Diu01st/spg4n1oPDfU2drGPBcSjHU/UIczX0iABitlCK7QKBgQDtzEhU3dFTAVWDq4c8Hjyx9hSZhlPf3w4i4psrPEHKB9ok5HWrHTK+x6zwWQGOz2v4TXnDK9losV/GJTUAR6rT5L1umtNIRNyxnu7Xg6rZwwYNnDSKZE27pl9QekaDHSk+yXD5JqvTOJqA79GqXvdJaAff7BFoUlwEgcpP3g3xUwKBgDUlZX4XiiwiLeu2e9LZ3oMwsUY4OUZ+eLXHQKOry3cCNegdqamj3/FqmUmRpxOTttd4LltDoy59RIvHjR3jUiFeR96WwFU6z678dLX1BQZiav0hkWTH+JzskcyQYiOpiCw+bXkQoNc7BNo7KNbx2D+X1ZhzQlEyoSP94u8xdZOlAoGAQZSnFhCem/+wL8HsZ94G6yVshPKQyxre8SwBkyjpE+iadrYy5WAGEKtMvHQvg80cf7wOKo87RC42tZSpS0x4hjt9KrW0MyganTmxsOn1Al1QnAxKSShkb63wd2dhbuNp7pDrgSrzFCt2IL0C27OZCzuPgGfAXT7pday9uM0Kl1UCgYBRR95ejahKd66OF+PxYPD4tJwJjZNj02+PvWNdSd+gxVA7nfR9dVcH2B9PO4CPLIFbpqtG1PcxgTjkDAN2hKE8bDLMH2S+8nOPKyyLKpqnJ7nA1PSUc0aSVY+xLdBRx+hoomLvxT+nw2Q3DXHuQKoJE00tg7Zjhnfs8LIMgkBrxQ==" >
+        </meta-data>
+
+        <service
+            android:name="com.taobao.sophix.aidl.DownloadService"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.taobao.hotfix.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.xulan.demo.activity.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.UpdatePassWordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.TaskStateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.camera.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.stick.StickActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.xulan.demo.activity.carline.InStorageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DoBoxScanActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#aeffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/task_name"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/trains_arrive_edt_1"
+                    style="@style/common_text"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:focusable="false"
+                    android:gravity="center|left"
+                    android:hint="@string/select_task"
+                    android:paddingRight="10dp"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tractor_no"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/trains_arrive_edt_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:textSize="13sp"
+                    android:digits="@string/stack_digit"
+                    android:gravity="center|left"
+                    android:maxLength="10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/shift"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/trains_arrive_edt_3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textSize="13sp"
+                    android:background="#00000000"
+                    android:gravity="center|left" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/packages_count"
+                    android:textColor="#000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/trains_arrive_edt_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:enabled="false"
+                    android:gravity="center|left"
+                    android:padding="5dp"
+                    android:textSize="13sp"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/pic"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/trains_arrive_edt_5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:textSize="13sp"
+                    android:gravity="center|left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/background_text"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/tel"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/trains_arrive_edt_6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:textSize="13sp"
+                    android:background="#00000000"
+                    android:gravity="center|left" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:layout_width="188dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/selector_btn_button"
+                    android:onClick="sureArrive"
+                    android:text="@string/ok"
+                    android:textColor="@color/main_color"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

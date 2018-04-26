@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/linecar_item_title_1"
+            style="@style/common_text"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/no_2"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+             android:id="@+id/linecar_item_title_2"
+            style="@style/common_text"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="sortByPackBarcode"
+            android:text="业务编号"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+             android:id="@+id/linecar_item_title_3"
+            style="@style/common_text"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="sortByPackNo"
+            android:text="车架号"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+             android:id="@+id/linecar_item_title_4"
+            style="@style/common_text"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="库位号"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+             android:id="@+id/linecar_item_title_5"
+            style="@style/common_text"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="管理员"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/grgray" />
+
+        <TextView
+             android:id="@+id/linecar_item_title_6"
+            style="@style/common_text"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="扫描时间"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/gray_dark" />
+
+</LinearLayout>

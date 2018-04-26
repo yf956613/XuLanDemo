@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="5dp"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/background_text"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:text="@string/task_name"
+                android:textColor="#000"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/task_state_task_name"
+                style="@style/common_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#00000000"
+                android:focusable="false"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:gravity="center"
+                        android:text="@string/mode_step"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grgray" />
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="sortByPackBarcode"
+                        android:text="@string/load_count"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grgray" />
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="sortByPackNo"
+                        android:text="@string/scan_count"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grgray" />
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:onClick="sortByPackNo"
+                        android:text="@string/exceptional_count"
+                        android:textSize="13sp" />
+
+                    <View
+                        android:layout_width="0.2dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grgray" />
+
+                    <TextView
+                        style="@style/common_text"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:text="@string/commit_time"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.2dp"
+                    android:background="@color/gray_dark" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.xulan.demo.view.MyListView
+            android:id="@+id/item_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            android:fastScrollEnabled="true"
+            android:scrollingCache="false" />
+    </LinearLayout>
+
+</LinearLayout>

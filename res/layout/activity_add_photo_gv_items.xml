@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xulan.demo.activity.SquareRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/main_gridView_item_photo"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@null"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/main_gridView_item_cb"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/delete"
+        android:layout_margin="7dp"
+        android:button="@null" />
+
+</com.xulan.demo.activity.SquareRelativeLayout>
