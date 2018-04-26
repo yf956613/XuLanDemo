@@ -2,6 +2,8 @@ package com.xulan.demo.activity.carline;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import com.lidroid.xutils.ViewUtils;
@@ -10,6 +12,7 @@ import com.xulan.demo.MyApplication;
 import com.xulan.demo.R;
 import com.xulan.demo.activity.BaseActivity;
 import com.xulan.demo.data.LinkInfo;
+import com.xulan.demo.data.ScanData;
 import com.xulan.demo.util.CommandTools;
 import com.xulan.demo.util.PostTools;
 import com.xulan.demo.util.RequestUtil;
@@ -113,17 +116,38 @@ public class CarCheckingActivity extends BaseActivity {
 			header.put("scan_time", CommandTools.getTime());
 			header.put("GPS_CoordX", "121.358297");
 			header.put("GPS_CoordY", "31.226501");
-			header.put("Device_Id", "8520198001");
+			header.put("Device_Id", CommandTools.getMIME(this));
 			header.put("flag", MyApplication.m_flag);
 
 			jsonObject.put("header", header);
 
+			JSONArray jsonArray = new JSONArray();
+
+			ScanData data = new ScanData();
 			JSONObject jo = new JSONObject();
 
 			jo.put("scan_id", CommandTools.getUUID());
 			jo.put("scan_detail_id", CommandTools.getUUID());
 
-			//			jsonObject.put("detail", jsonObject);
+			jo.put("packBarcode", data.getPackBarcode());
+			jo.put("packNumber", data.getPackNumber());
+			jo.put("MainGoodsId", data.getMainGoodsId());
+
+			jo.put("CacheId", data.getCacheId());
+			jo.put("ScanType", data.getScanType());
+			jo.put("ScanTime", data.getScanTime());
+			jo.put("createTime", data.getCreateTime());
+			jo.put("GoodsName", data.getGoodsName());
+			jo.put("Memo", data.getMemo());
+
+			jo.put("Length", data.getLength());
+			jo.put("Width", data.getWidth());
+			jo.put("Height", data.getHeight());
+			jo.put("Weight", data.getWeight());
+
+			jsonArray.put(jo);
+
+			jsonObject.put("detail", jsonArray);
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -138,10 +162,24 @@ public class CarCheckingActivity extends BaseActivity {
 				CustomProgress.dissDialog();
 				CommandTools.showToast(remark);
 				if(res == 0){
-					finish();
+
+					clearData();
 				}
 			}
 		});
 	}
 
+	public void clearData(){
+
+		edtBrandNo.setText("");
+		edtCarNo.setText("");
+		edtColor.setText("");
+		edtDate.setText("");
+		edtDeploy.setText("");
+		edtEngineNo.setText("");
+		edtGuestNo.setText("");
+		edtModel.setText("");
+		edtSits.setText("");
+		edtWheel.setText("");
+	}
 }
