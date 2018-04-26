@@ -229,5 +229,6 @@
     <string name="Company_is_Closed">用户公司已停用</string>
     <string name="tiemai">贴  唛</string>
     <string name="title_activity_in_storage">InStorageActivity</string>
+    <string name="title_activity_car_checking">CarCheckingActivity</string>
 
 </resources>

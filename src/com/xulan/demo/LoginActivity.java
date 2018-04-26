@@ -209,6 +209,11 @@ public class LoginActivity extends Activity {
 	 * @param v
 	 */
 	public void login(View v) {
+		
+		Intent intent = new Intent(LoginActivity.this, LuYouActivity.class);
+		intent.putExtra("platform_id", MyApplication.m_platform_id);
+		startActivity(intent);
+		finish();
 
 		if ("".equals(tvName.getText().toString()) || "".equals(tvPsd.getText().toString())) {
 			CommandTools.showToast(getResources().getString(R.string.u_p_not_null));
