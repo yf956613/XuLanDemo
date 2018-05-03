@@ -18,7 +18,6 @@
             android:layout_marginRight="40px"
             android:background="@drawable/login_en"
             android:textColor="@color/white"
-            android:visibility="invisible"
             android:textSize="15sp" />
 
         <TextView

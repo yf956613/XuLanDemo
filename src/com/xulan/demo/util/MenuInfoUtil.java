@@ -19,6 +19,7 @@ import com.xulan.demo.activity.action.TaskListActivity;
 import com.xulan.demo.activity.action.land.LandActivity;
 import com.xulan.demo.activity.action.load.LoadUnloadActivity;
 import com.xulan.demo.activity.air.AirInstallActivity;
+import com.xulan.demo.activity.carline.CarCheckingActivity;
 import com.xulan.demo.activity.carline.InStorageActivity;
 import com.xulan.demo.activity.freightyard.StorageActivity;
 import com.xulan.demo.activity.install.InstallActivity;
@@ -647,11 +648,12 @@ public class MenuInfoUtil {
 		idList.add(R.string.exceptional);
 		idList.add(R.string.return_cargo);
 		idList.add(R.string.search);
+		
 		menuTexts = CommandTools.getStr(idList, mContext);
 
 		menuActivity = new Object[]{
 				InStorageActivity.class, InStorageActivity.class,
-				SingleScanActivity.class, ActionPhotoActivity.class,
+				CarCheckingActivity.class, ActionPhotoActivity.class,
 				AbnormalActivity.class, BackScanActivity.class,
 				InqueryActivity.class
 		};

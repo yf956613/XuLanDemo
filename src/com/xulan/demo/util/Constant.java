@@ -17,8 +17,11 @@ public class Constant {
 	public static String appKey = "hgjkbiuytfghj7865rtyfghvbnjhiuo908";
 
 	//APP升级检测网址
-	public static String UPDATEURL = "http://47.92.77.121:8888/xl_appupdate/checkNew?os=android&type=app&ver=1.0&tag=normal";
+//	public static String UPDATEURL = "http://47.92.77.121:8888/xl_appupdate/checkNew?os=android&type=app&ver=1.0&tag=normal&appname=xulandemo";
 	public static String URL = "http://192.168.3.4:8080/";
+	
+	//APP升级检测网址---本地测试
+	public static String UPDATEURL = "http://192.168.16.1:8080/xl_appupdate/checkNew?os=android&type=app&ver=1.0&tag=normal&appname=xulandemo";
 
 	//		public static String TEST_URL = "http://192.168.34.101:8080/";//服务器地址
 	//		public static String TEST_URL = "http://www.netcargo.cn:8888/datatest-service-pro/";//服务器地址
